@@ -93,7 +93,7 @@ export const workData = [
   {
     title: "Nike Store",
     description: "E-commerce Website frontend",
-    bgImage: "/nikE.png",
+    bgImage: "/nike.png",
     link: "https://nike-shoe-ecommerce.netlify.app/",
   },
   {

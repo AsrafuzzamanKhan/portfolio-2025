@@ -31,12 +31,12 @@ const Navbar = () => {
                     <Image src={assets.logo} className='w-28 cursor-pointer mr-14' alt='logo' />
                 </a>
                 <ul className={`hidden md:flex items-center gap-6 lg:gap-8  px-12 py-3   ${isScrolled ? 'bg-transparent' : ' rounded-full shadow-sm bg-opacity-50'}`}>
-                    <li><a href="#top" className='font-Ovo'>Home</a></li>
-                    <li className='font-Ovo'><a href="#about" className='font-Ovo'>About me</a></li>
-                    <li><a href="#services" className='font-Ovo'>Services</a></li>
-                    <li><a href="#work" className='font-Ovo'>My work</a></li>
-                    <li><a href="#experience" className='font-Ovo'>Experience</a></li>
-                    <li><a href="#contact" className='font-Ovo'>Contact me</a></li>
+                    <li className=''><a href="#top" className='font-Ovo hover:text-green-800'>Home</a></li>
+                    <li className='font-Ovo'><a href="#about" className='font-Ovo hover:text-green-800'>About me</a></li>
+                    <li><a href="#services" className='font-Ovo hover:text-green-800'>Services</a></li>
+                    <li><a href="#work" className='font-Ovo hover:text-green-800'>My work</a></li>
+                    <li><a href="#experience" className='font-Ovo hover:text-green-800'>Experience</a></li>
+                    <li><a href="#contact" className='font-Ovo hover:text-green-800'>Contact me</a></li>
 
                 </ul>
                 <div className='flex items-center gap-4'>
