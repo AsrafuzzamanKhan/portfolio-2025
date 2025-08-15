@@ -18,8 +18,9 @@ const Work = () => {
             <div className='grid grid-cols-1  md:grid-cols-2 gap-6'>
                 {
                     workData.map(({ title, description, bgImage, link }, index) => (
-                        <div key={index} className='mb-10 aspect-auto bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '300px', borderRadius: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <a href={link} target="_blank">
+                        <a href={link} key={index} target="_blank">
+                            <div className='mb-10 aspect-auto bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '300px', borderRadius: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+
                                 <div className='absolute w-10/12 bg-white rounded-md bottom-5 left-1/2 -translate-x-1/2 py-3 px-4 flex items-center justify-between shadow-lg group-hover:bottom-7 duration-500'>
                                     <div>
                                         <h2 className='font-semiold'>{title}</h2>
@@ -30,8 +31,10 @@ const Work = () => {
 
                                     </div>
                                 </div>
-                            </a>
-                        </div>))
+
+                            </div>
+                        </a>
+                    ))
                 }
             </div>
         </div >
