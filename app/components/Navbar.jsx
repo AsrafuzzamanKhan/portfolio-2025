@@ -30,7 +30,7 @@ const Navbar = () => {
                 <a href="#top">
                     <Image src={assets.logo} className='w-28 cursor-pointer mr-14' alt='logo' />
                 </a>
-                <ul className={`hidden md:flex items-center gap-6 lg:gap-8  px-12 py-3   ${isScrolled ? 'bg-transparent' : ' rounded-full shadow-sm bg-opacity-50'}`}>
+                <ul className={`hidden lg:flex items-center gap-6 lg:gap-8  px-12 py-3   ${isScrolled ? 'bg-transparent' : ' rounded-full shadow-sm bg-opacity-50'}`}>
                     <li className=''><a href="#top" className='font-Ovo hover:text-green-800'>Home</a></li>
                     <li className='font-Ovo'><a href="#about" className='font-Ovo hover:text-green-800'>About me</a></li>
                     <li><a href="#services" className='font-Ovo hover:text-green-800'>Services</a></li>
@@ -52,31 +52,31 @@ const Navbar = () => {
                             onClick={openSideMenu}
                             src={assets.menu_black}
                             alt='menu'
-                            className='block md:hidden w-6 ml-4' />
+                            className='block lg:hidden w-6 ml-4' />
                     </button>
                 </div>
 
                 {/* mobile menu  */}
-                <ul ref={sideMenuRef} className='fixed top-0 -right-64 bottom-0 w-64 h-screen bg-rose-50 md:hidden flex flex-col items-center gap-4 py-20 px-10 rounded-lg shadow-lg z-50 transition duration-700'>
+                <ul ref={sideMenuRef} className='fixed top-0 -right-64 bottom-0 w-64 h-screen bg-rose-50 lg:hidden flex flex-col items-center gap-4 py-20 px-10 rounded-lg shadow-lg z-50 transition duration-700'>
                     <div className='absolute top-5 right-5'>
                         <Image onClick={closeSideMenu} src={assets.close_black} className='w-5 cursor-pointer' alt='logo' />
                     </div>
-                    <li className='md:hidden'>
+                    <li className='lg:hidden'>
                         <a href="#top" className='font-Ovo' onClick={closeSideMenu}>Home</a>
                     </li>
-                    <li className='md:hidden'>
+                    <li className='lg:hidden'>
                         <a href="#about" className='font-Ovo' onClick={closeSideMenu}>About me</a>
                     </li>
-                    <li className='md:hidden'>
+                    <li className='lg:hidden'>
                         <a href="#services" className='font-Ovo' onClick={closeSideMenu}>Services</a>
                     </li>
-                    <li className='md:hidden'>
+                    <li className='lg:hidden'>
                         <a href="#work" className='font-Ovo' onClick={closeSideMenu}>My work</a>
                     </li>
-                    <li className='md:hidden'>
+                    <li className='lg:hidden'>
                         <a href="#experience" className='font-Ovo' onClick={closeSideMenu}>Experience</a>
                     </li>
-                    <li className='md:hidden'>
+                    <li className='lg:hidden'>
                         <a href="#contact" className='font-Ovo' onClick={closeSideMenu}>Contact me</a>
                     </li>
                 </ul>

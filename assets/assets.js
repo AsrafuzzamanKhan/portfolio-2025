@@ -17,6 +17,7 @@ import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
 import profile_img from "./profile-img.jpg";
+import profile_img1 from "./profile-img1.jpg";
 import download_icon from "./download-icon.png";
 import hand_icon from "./hand-icon.png";
 import header_bg_color from "./header-bg-color.png";
@@ -56,6 +57,7 @@ export const assets = {
   mail_icon,
   mail_icon_dark,
   profile_img,
+  profile_img1,
   download_icon,
   hand_icon,
   header_bg_color,

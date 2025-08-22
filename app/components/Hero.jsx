@@ -4,10 +4,10 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='w-11/12 max-w-3xl h-screen text-center mx-auto flex flex-col items-center justify-center gap-4'>
+        <div className='w-11/12 max-w-3xl min-h-screen text-center mx-auto flex flex-col items-center justify-center gap-4'>
 
             <div>
-                <Image src={assets.profile_img} alt='hero background' className=' rounded-full w-32  contain' />
+                <Image src={assets.profile_img1} alt='hero background' className=' rounded-full w-[150px] h-[150px] object-fill' />
 
             </div>
             <h3 className=' flex items-center gap-2 text-xl md:text-2xl font-Ovo  mb-4'>
@@ -20,9 +20,9 @@ const Hero = () => {
 
             <div className='flex gap-4'>
                 <a href="#contact"
-                    className='px-10 py-3 rounded-full border border-white bg-black text-white  flex items-center gap-2'
+                    className='px-4 text-sm md:text-lg md:px-10 py-1 md:py-3 rounded-full border border-white bg-black text-white  flex items-center gap-2'
                 >Contact me <Image src={assets.right_arrow_white} alt='contact' className='w-4' /></a>
-                <a href="/resume.pdf" download className='px-10 py-3 border rounded-full border border-gray-500 flex items-center gap-2'>My resume <Image src={assets.download_icon} alt='contact' className='w-4' /></a>
+                <a href="/resume.pdf" download className='px-4 md:px-10 py-1 md:py-3  text-sm md:text-lg border rounded-full border border-gray-500 flex items-center gap-2'>My resume <Image src={assets.download_icon} alt='contact' className='w-4' /></a>
             </div>
 
         </div>
