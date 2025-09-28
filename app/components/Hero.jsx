@@ -20,7 +20,7 @@ const Hero = () => {
 
             <div className='flex gap-4'>
                 <a href="#contact"
-                    className='px-4 text-sm md:text-lg md:px-10 py-1 md:py-3 rounded-full border border-white bg-black text-white  flex items-center gap-2'
+                    className='px-2  py-2 text-sm md:text-lg md:px-10 md:py-2 rounded-full border border-white bg-black text-white flex items-center gap-2'
                 >Contact me <Image src={assets.right_arrow_white} alt='contact' className='w-4' /></a>
                 <a href="/resume.pdf" download className='px-4 md:px-10 py-1 md:py-3  text-sm md:text-lg border rounded-full border border-gray-500 flex items-center gap-2'>My resume <Image src={assets.download_icon} alt='contact' className='w-4' /></a>
             </div>

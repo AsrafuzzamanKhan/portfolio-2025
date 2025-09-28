@@ -43,7 +43,7 @@ const Navbar = () => {
                     {/* <button>
                         <Image src={assets.moon_icon} alt='moon' className='w-6' />
                     </button> */}
-                    <a href="#contact" className=' hidden lg:flex items-center gap-3 px-10 border border-gray-500 rounded-full py-2.5 ml-4 font-Ovo hover:bg-black hover:text-white hover:border-white transition duration-300'>
+                    <a href="#contact" className=' hidden lg:flex items-center gap-3 px-10 border border-gray-500 rounded-full py-2 ml-4 font-Ovo hover:bg-black hover:text-white hover:border-white transition duration-300'>
                         Contact <Image src={assets.arrow_icon}
                             className='w-3' id='contact' />
                     </a>
