@@ -7,18 +7,18 @@ const Experience = () => {
         <div id='experience' className='w-full px-[12%] py-10 scroll-mt-20 bg-white '>
 
             <h4 className="text-center mb-2 text-lg font-Ovo">
-                Where I’ve Worked
+                Where I've Worked
             </h4>
             <h2 className="text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo">
                 Professional Experience
             </h2>
             <p className="text-center max-w-2xl mx-auto mb-10 mt-5">
-                Over the years, I’ve contributed to diverse projects across industries,
+                Over the years, I've contributed to diverse projects across industries,
                 building scalable, user-friendly applications and collaborating with dynamic teams to achieve impactful results.
             </p>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {workExperience.map(({ company, role, period, responsibilities }, index) => (
-                    <div key={index} className='p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300'>
+                    <div key={index} className='p-6 bg-white rounded-2xl  hover:shadow-xl transition duration-300 shadow-xl'>
                         <h3>{company}</h3>
                         <p><strong>{role}</strong> — <em>{period}</em></p>
                         <ul>

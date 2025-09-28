@@ -15,11 +15,11 @@ const Work = () => {
                 Welcome to my web development portfolio! Explore a collection of projects showcasing
                 my expertise in front-end development.
             </p>
-            <div className='grid grid-cols-1  md:grid-cols-2 gap-6'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6'>
                 {
                     workData.map(({ title, description, bgImage, link }, index) => (
                         <a href={link} key={index} target="_blank">
-                            <div className='mb-10 aspect-auto bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '300px', borderRadius: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <div className='mb-10 aspect-auto bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group shadow-xl' style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '300px', borderRadius: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
                                 <div className='absolute w-10/12 bg-white rounded-md bottom-5 left-1/2 -translate-x-1/2 py-3 px-4 flex items-center justify-between shadow-lg group-hover:bottom-7 duration-500'>
                                     <div>

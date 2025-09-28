@@ -16,7 +16,7 @@ const Hero = () => {
             <h1 className=' text-3xl  sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo'>
                 Full stack web developer
             </h1>
-            <p>Skilled Full-Stack Developer with 3+ years’ experience building responsive, high-performance web applications. Committed to clean code, strong problem-solving, and delivering excellent user experiences.</p>
+            <p>Skilled Full-Stack Developer with 3+ year's experience building responsive, high-performance web applications. Committed to clean code, strong problem-solving, and delivering excellent user experiences.</p>
 
             <div className='flex gap-4'>
                 <a href="#contact"

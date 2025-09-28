@@ -81,6 +81,12 @@ export const assets = {
 
 export const workData = [
   {
+    title: "ILearning Solutions",
+    description: "eLearning Platform",
+    bgImage: "/ilearning.png",
+    link: "https://i-learning-solutions.vercel.app/",
+  },
+  {
     title: "Food Club",
     description: "Online Food Ordering Website",
     bgImage: "/food.png",
@@ -167,6 +173,16 @@ export const toolsData = [
 ];
 
 export const workExperience = [
+  {
+    company: "iLearning Solutions",
+    role: "Full Stack Developer",
+    period: "Aug 2025 – Present",
+    responsibilities: [
+      "Developing scalable applications with Next.js & React",
+      "Designing responsive UIs and managing APIs",
+      "Optimizing performance, SEO, and deployments",
+    ],
+  },
   {
     company: "Americold Logistics",
     role: "Forklift Operator & Ambient Picker",
