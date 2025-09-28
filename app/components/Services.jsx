@@ -20,13 +20,13 @@ const Services = () => {
                 {serviceData.map(({ icon, title, description, link }, index) => (
                     <div
                         key={index}
-                        className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300"
+                        className="p-4 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300"
                     >
                         <div className="flex items-center mb-4">
                             <Image className="w-10" src={icon} alt='service' />
                             <h3 className="ml-3 text-xl font-semibold">{title}</h3>
                         </div>
-                        <p className="text-gray-600">{description}</p>
+                        <p className="text-gray-700">{description}</p>
                     </div>
                 ))}
             </div>

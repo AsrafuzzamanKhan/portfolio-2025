@@ -18,12 +18,12 @@ const Experience = () => {
             </p>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {workExperience.map(({ company, role, period, responsibilities }, index) => (
-                    <div key={index} className='p-6 bg-white rounded-2xl  hover:shadow-xl transition duration-300 shadow-xl'>
+                    <div key={index} className='p-4 bg-white rounded-2xl  hover:shadow-xl transition duration-300 shadow-xl'>
                         <h3>{company}</h3>
                         <p><strong>{role}</strong> — <em>{period}</em></p>
                         <ul>
                             {responsibilities.map((item, i) => (
-                                <li key={i} className='flex items-center gap-2 text-gray-600 my-2'>
+                                <li key={i} className='flex items-center gap-2 text-gray-700 mt-1'>
                                     <Image src={assets.right_arrow} alt='contact' className='w-4 ' /> {item}
                                 </li>
                             ))}
