@@ -4,7 +4,7 @@ import React from 'react'
 
 const Experience = () => {
     return (
-        <div id='experience' className='w-full px-[12%] py-10 scroll-mt-20 bg-white '>
+        <div id='experience' className='w-full px-[10%] py-10 scroll-mt-20 bg-white '>
 
             <h4 className="text-center mb-2 text-lg font-Ovo">
                 Where I've Worked

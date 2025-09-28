@@ -31,7 +31,7 @@ const Navbar = () => {
                     <Image src={assets.logo} className='w-28 cursor-pointer mr-14' alt='logo' />
                 </a>
                 <ul className={`hidden lg:flex items-center gap-6 lg:gap-8  px-12 py-3   ${isScrolled ? 'bg-transparent' : ' rounded-full shadow-sm bg-opacity-50'}`}>
-                    <li className=''><a href="#home" className='font-Ovo hover:text-green-800'>Home</a></li>
+                    <li className=''><a href="#top" className='font-Ovo hover:text-green-800'>Home</a></li>
                     <li className='font-Ovo'><a href="#about" className='font-Ovo hover:text-green-800'>About me</a></li>
                     <li><a href="#services" className='font-Ovo hover:text-green-800'>Services</a></li>
                     <li><a href="#work" className='font-Ovo hover:text-green-800'>My work</a></li>
@@ -43,9 +43,9 @@ const Navbar = () => {
                     {/* <button>
                         <Image src={assets.moon_icon} alt='moon' className='w-6' />
                     </button> */}
-                    <a href="#contact" className=' hidden lg:flex items-center gap-3 px-10 border border-gray-500 rounded-full py-2.5 ml-4 font-Ovo'>
+                    <a href="#contact" className=' hidden lg:flex items-center gap-3 px-10 border border-gray-500 rounded-full py-2.5 ml-4 font-Ovo hover:bg-black hover:text-white hover:border-white transition duration-300'>
                         Contact <Image src={assets.arrow_icon}
-                            className='w-3 ' alt='contact' />
+                            className='w-3' id='contact' />
                     </a>
                     <button>
                         <Image
@@ -62,7 +62,7 @@ const Navbar = () => {
                         <Image onClick={closeSideMenu} src={assets.close_black} className='w-5 cursor-pointer' alt='logo' />
                     </div>
                     <li className='lg:hidden'>
-                        <a href="#home" className='font-Ovo' onClick={closeSideMenu}>Home</a>
+                        <a href="#top" className='font-Ovo' onClick={closeSideMenu}>Home</a>
                     </li>
                     <li className='lg:hidden'>
                         <a href="#about" className='font-Ovo' onClick={closeSideMenu}>About me</a>
