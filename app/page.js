@@ -1,0 +1,26 @@
+"use client";
+import About from "./components/About";
+import Certificate from "./components/Certificate";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Services from "./components/Services";
+import Work from "./components/Work";
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Certificate />
+      <Services />
+      <Work />
+      <Experience />
+      <Contact />
+      <Footer />
+    </>
+  );
+}
