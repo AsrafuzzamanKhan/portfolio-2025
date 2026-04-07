@@ -1,5 +1,3 @@
-"use client";
-
 import code_icon from "./code-icon.png";
 import code_icon_dark from "./code-icon-dark.png";
 import edu_icon from "./edu-icon.png";
@@ -94,7 +92,7 @@ export const certificateData = [
     description:
       "Learned core data concepts, relational and non-relational data, and Azure data services.",
     image: assets.azure_database,
-
+    link: "/certificates/azure_database.pdf",
   },
   {
     title: "Microsoft Certified: Azure AI Fundamentals",
@@ -102,8 +100,8 @@ export const certificateData = [
     date: "March 25, 2025",
     description:
       "Gained knowledge of AI concepts, machine learning, and Azure AI services.",
-    image: assets.azure_AI
-
+    image: assets.azure_AI,
+    link: "/certificates/azure_ai_fundamentals.pdf",
   },
   {
     title: "Information Technology Specialist - Python",
@@ -112,9 +110,8 @@ export const certificateData = [
     description:
       "Successfully completed Python certification covering programming fundamentals, problem solving, and real-world applications.",
     image: assets.python,
-
+    link: "/certificates/python.pdf",
   },
-
   {
     title: "Complete Web Development",
     issuer: "Programming Hero",
@@ -122,45 +119,51 @@ export const certificateData = [
     description:
       "Completed a full web development course covering HTML, CSS, JavaScript, React, and project-based learning.",
     image: assets.full_stack_development,
-
+    link: "/certificates/full_stack.pdf",
   },
 ];
 export const workData = [
   {
-    title: "ILearning Solutions",
-    description: "eLearning Platform",
+    title: "iLearning Solutions",
+    description: "eLearning platform",
     bgImage: "/ilearning.png",
     link: "https://i-learning-solutions.vercel.app/",
+    tech: ["Next.js", "React", "Node.js", "MongoDB"],
   },
   {
     title: "Food Club",
-    description: "Online Food Ordering Website",
+    description: "Online food ordering website",
     bgImage: "/food.png",
     link: "https://food-club-f9921.web.app/",
+    tech: ["React", "Node.js", "MongoDB", "Firebase"],
   },
   {
     title: "Car Vault",
-    description: "Car Selling Website",
+    description: "Car selling website",
     bgImage: "/car.png",
     link: "https://car-vault.web.app/",
+    tech: ["React", "Node.js", "MongoDB", "Firebase"],
   },
   {
     title: "InfoStark",
-    description: "Digitial Marketing Website",
+    description: "Digital marketing website",
     bgImage: "/infostark.png",
     link: "https://infostark.com/",
+    tech: ["React", "Tailwind CSS"],
   },
   {
     title: "Nike Store",
-    description: "E-commerce Website frontend",
+    description: "E-commerce frontend",
     bgImage: "/nike.png",
     link: "https://nike-shoe-ecommerce.netlify.app/",
+    tech: ["React", "Tailwind CSS"],
   },
   {
     title: "Interior Design",
-    description: "Interior Design Website",
+    description: "Interior design website",
     bgImage: "/interio.png",
     link: "https://bd-interio.netlify.app/",
+    tech: ["React", "CSS"],
   },
 ];
 
@@ -169,26 +172,28 @@ export const serviceData = [
     icon: assets.web_icon,
     title: "Full-Stack Web Development",
     description:
-      "End-to-end development from front-end design to back-end integration.",
+      "Build modern web applications from responsive frontend interfaces to scalable backend solutions.",
     link: "",
   },
   {
     icon: assets.mobile_icon,
     title: "Responsive UI/UX Design",
     description:
-      "Mobile-friendly, visually appealing, and user-focused interfaces.",
+      "Design clean, mobile-friendly, and user-focused interfaces for better usability and engagement.",
     link: "",
   },
   {
     icon: assets.ui_icon,
     title: "Website Optimization & SEO",
-    description: "Speed, performance, and search engine ranking improvements.",
+    description:
+      "Improve speed, performance, SEO, and overall user experience for better visibility and results.",
     link: "",
   },
   {
     icon: assets.graphics_icon,
     title: "Web Application Maintenance",
-    description: "Regular updates, bug fixes, and feature enhancements.",
+    description:
+      "Provide ongoing updates, bug fixes, and improvements to keep applications secure and reliable.",
     link: "",
   },
 ];
@@ -197,9 +202,9 @@ export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js, Python",
-    description2: "Node.js, Express.js, MongoDB",
+    title: "Technical skills",
+    description: "JavaScript (ES6+), Python, React.js, Next.js, HTML, CSS",
+    description2: "Tailwind CSS, Bootstrap, Node.js, Express.js, MongoDB",
   },
   {
     icon: assets.edu_icon,
@@ -212,7 +217,9 @@ export const infoList = [
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 5 projects",
+    description: "Built 5+ responsive and user-focused web applications",
+    description2: "Including full-stack, e-commerce, and business websites",
+
   },
 ];
 

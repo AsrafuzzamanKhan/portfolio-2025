@@ -26,12 +26,12 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { id: "top", label: "Home" },
-        { id: "about", label: "About me" },
-        { id: "certificates", label: "Certificates" },
-        { id: "services", label: "Services" },
-        { id: "work", label: "My work" },
-        { id: "experience", label: "Experience" },
+        { id: "home", label: "Home", href: "/" },
+        { id: "about", label: "About me", href: "#about" },
+        { id: "certificates", label: "Certificates", href: "#certificates" },
+        { id: "services", label: "Services", href: "#services" },
+        { id: "work", label: "My work", href: "#work" },
+        { id: "experience", label: "Experience", href: "#experience" },
     ];
 
     return (

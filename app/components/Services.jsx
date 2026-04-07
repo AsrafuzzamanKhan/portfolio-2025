@@ -1,37 +1,50 @@
-import { serviceData } from '@/assets/assets'
-import Image from 'next/image'
-import React from 'react'
+import { serviceData } from "@/assets/assets";
+import Image from "next/image";
+import React from "react";
 
 const Services = () => {
     return (
-        <div id='services' className='w-full px-[10%] py-10 scroll-mt-20 bg-white '>
-
-            <h4 className='text-center mb-2 text-lg font-Ovo'>
-                What I offer
+        <section
+            id="services"
+            className="w-full px-[10%] py-12 scroll-mt-20 bg-white"
+        >
+            <h4 className="text-center mb-2 text-lg font-Ovo text-gray-700">
+                What I do
             </h4>
-            <h2 className='text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo'>
-                My Services
+
+            <h2 className="text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo">
+                Services
             </h2>
-            <p className='text-center  max-w-2xl mx-auto mb-10 mt-5 '>
-                Building powerful, responsive, and high-performance web solutions.
-                Full-Stack expertise to deliver seamless user experiences end-to-end.
+
+            <p className="text-center max-w-2xl mx-auto mb-12 mt-5 text-gray-600 leading-7">
+                I build responsive, high-performance, and user-focused web applications
+                using modern full-stack technologies.
             </p>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
-                {serviceData.map(({ icon, title, description, link }, index) => (
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {serviceData.map(({ icon, title, description }, index) => (
                     <div
                         key={index}
-                        className="p-4 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300"
+                        className="bg-white rounded-2xl border border-gray-200 p-4 h-full shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"
                     >
-                        <div className="flex items-center mb-4">
-                            <Image className="w-10" src={icon} alt='service' />
-                            <h3 className="ml-3 text-xl font-semibold">{title}</h3>
+                        <div className="flex items-start gap-4 mb-4">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-pink-50 shrink-0">
+                                <Image className="w-6" src={icon} alt={title} />
+                            </div>
+
+                            <h3 className="text-xl font-semibold text-black leading-snug">
+                                {title}
+                            </h3>
                         </div>
-                        <p className="text-gray-700">{description}</p>
+
+                        <p className="text-gray-600 leading-7 text-sm md:text-base">
+                            {description}
+                        </p>
                     </div>
                 ))}
             </div>
+        </section>
+    );
+};
 
-        </div>
-    )
-}
-export default Services
+export default Services;
