@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [activeMenu, setActiveMenu] = useState("top");
     const sideMenuRef = useRef();
-    const { toggleTheme, isDark } = useTheme();
+    const { toggleTheme } = useTheme();
 
     const openSideMenu = () => {
         sideMenuRef.current.style.transform = "translateX(-16rem)";
@@ -37,11 +37,9 @@ const Navbar = () => {
 
     return (
         <>
-            {!isDark && (
-                <div className="fixed top-0 right-0 -z-10 w-10/11 translate-y-[-80%]">
-                    <Image src={assets.header_bg_color} alt="background" className="w-full" />
-                </div>
-            )}
+            <div className="fixed top-0 right-0 -z-10 w-10/11 translate-y-[-80%] dark:hidden">
+                <Image src={assets.header_bg_color} alt="background" className="w-full" />
+            </div>
 
             <nav
                 className={`w-full fixed py-3 px-5 lg:px-8 xl:px-[6%] flex items-center justify-between z-50 transition-all duration-300 ${isScrolled
