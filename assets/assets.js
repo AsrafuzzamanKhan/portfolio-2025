@@ -124,6 +124,13 @@ export const certificateData = [
 ];
 export const workData = [
   {
+    title: "MediQube",
+    description: "Full-stack telehealth platform",
+    bgImage: "/mediqube.png",
+    link: "https://mediqube-phi.vercel.app/",
+    tech: ["Next.js", "React", "Node.js", "MongoDB", "AES-256"],
+  },
+  {
     title: "iLearning Solutions",
     description: "eLearning platform",
     bgImage: "/ilearning.png",
@@ -146,10 +153,10 @@ export const workData = [
   },
   {
     title: "InfoStark",
-    description: "Digital marketing website",
+    description: "Business website",
     bgImage: "/infostark.png",
-    link: "https://infostark.com/",
-    tech: ["React", "Tailwind CSS"],
+    link: "https://infostark.vercel.app/",
+    tech: ["React", "Next.js", "Tailwind CSS"],
   },
   {
     title: "Nike Store",
@@ -157,13 +164,6 @@ export const workData = [
     bgImage: "/nike.png",
     link: "https://nike-shoe-ecommerce.netlify.app/",
     tech: ["React", "Tailwind CSS"],
-  },
-  {
-    title: "Interior Design",
-    description: "Interior design website",
-    bgImage: "/interio.png",
-    link: "https://bd-interio.netlify.app/",
-    tech: ["React", "CSS"],
   },
 ];
 
@@ -203,23 +203,22 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Technical skills",
-    description: "JavaScript (ES6+), Python, React.js, Next.js, HTML, CSS",
-    description2: "Tailwind CSS, Bootstrap, Node.js, Express.js, MongoDB",
+    description: "JavaScript (ES6+), TypeScript, Python, React.js, Next.js",
+    description2: "Node.js, Express.js, MongoDB, AES-256, JWT, RBAC",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "Master of Information and Communications Technology. ",
+    description: "Master of Information and Communications Technology",
     description2: "University of the Sunshine Coast, Adelaide, Australia",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built 5+ responsive and user-focused web applications",
-    description2: "Including full-stack, e-commerce, and business websites",
-
+    description: "Built 6+ full-stack web applications including a telehealth platform",
+    description2: "Focused on security, performance, and real-world impact",
   },
 ];
 
@@ -233,35 +232,14 @@ export const toolsData = [
 
 export const workExperience = [
   {
-    company: "Americold Logistics",
-    role: "Forklift Operator",
-    period: "Jan 2026 – Present",
-    responsibilities: [
-      "Operate forklifts safely to move and organize stock",
-      "Load, unload, and store goods in designated locations",
-      "Support warehouse operations while maintaining safety standards",
-    ],
-  },
-  {
-    company: "iLearning Solutions",
+    company: "iLearning Solutions — Practicum, Adelaide",
     role: "Full Stack Developer",
     period: "Aug 2025 – Dec 2025",
     responsibilities: [
-      "Developing scalable applications with Next.js & React",
-      "Designing responsive UIs and managing APIs",
-      "Optimizing performance, SEO, and deployments",
-    ],
-  },
-
-
-  {
-    company: "Climate Logistics",
-    role: "Casual Warehouse Worker",
-    period: "Nov 2024 – Aug 2025",
-    responsibilities: [
-      "Pick, pack, and prepare customer orders for dispatch",
-      "Assist with ambient stock management and inventory handling",
-      "Maintain warehouse cleanliness and support daily operations",
+      "Built full-stack eLearning platform with Next.js & MongoDB; cut load time 35% via code-splitting",
+      "Delivered responsive component library, reducing post-launch UX issues by ~40%",
+      "Integrated 5+ REST APIs with optimised SEO metadata, improving search visibility",
+      "Shipped iteratively in Agile sprints — planning, peer review, and incremental releases",
     ],
   },
   {
@@ -269,10 +247,9 @@ export const workExperience = [
     role: "Full Stack Developer",
     period: "Oct 2023 – Sep 2024",
     responsibilities: [
-      "Developed MERN stack applications",
-      "Built responsive UIs with React",
-      "Managed APIs and databases",
-      "Collaborated on secure client solutions",
+      "Delivered 4+ client MERN stack applications on time and within scope",
+      "Built mobile-first UIs with React & Tailwind CSS; consistent cross-browser compatibility",
+      "Architected RESTful APIs and MongoDB schemas for client production systems",
     ],
   },
   {
@@ -280,9 +257,9 @@ export const workExperience = [
     role: "Web Developer",
     period: "Aug 2021 – Sep 2023",
     responsibilities: [
-      "Designed responsive websites",
-      "Wrote clean, efficient code",
-      "Optimized performance and SEO",
+      "Developed and maintained MERN stack apps serving an active e-commerce user base",
+      "Built responsive React interfaces, improving mobile engagement metrics",
+      "Independently owned backend services, DB queries, and deployment workflows",
     ],
   },
 ];

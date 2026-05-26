@@ -2,31 +2,42 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
+import { useTheme } from "./ThemeProvider";
 
 const Footer = () => {
+    const { isDark } = useTheme();
+
     return (
-        <div>
+        <div className="dark:bg-gray-950">
             <div className="text-center py-10">
-                <Image src={assets.logo} alt="footer logo" className="w-36 mx-auto mb-2" />
+                <Image
+                    src={isDark ? assets.logo_dark : assets.logo}
+                    alt="footer logo"
+                    className="w-36 mx-auto mb-2"
+                />
 
                 <div className="flex items-center justify-center gap-2 mb-4 w-max mx-auto">
-                    <Image src={assets.mail_icon} alt="mail icon" className="w-6" />
+                    <Image
+                        src={isDark ? assets.mail_icon_dark : assets.mail_icon}
+                        alt="mail icon"
+                        className="w-6"
+                    />
                     <a
                         href="mailto:contact@asrafuzzamankhan.com"
-                        className="hover:underline"
+                        className="hover:underline dark:text-gray-300"
                     >
                         contact@asrafuzzamankhan.com
                     </a>
                 </div>
             </div>
 
-            <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] pt-5 pb-10">
-                <p className="text-sm">
+            <div className="text-center sm:flex items-center justify-between border-t border-gray-400 dark:border-gray-700 mx-[10%] pt-5 pb-10">
+                <p className="text-sm dark:text-gray-400">
                     © {new Date().getFullYear()} MD Asrafuzzaman Khan. All rights reserved.
                 </p>
 
                 <ul className="flex items-center justify-center gap-4 my-4">
-                    <li className="hover:text-green-700 transition duration-300">
+                    <li className="hover:text-green-700 dark:text-gray-300 dark:hover:text-green-400 transition duration-300">
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -36,7 +47,7 @@ const Footer = () => {
                         </a>
                     </li>
 
-                    <li className="hover:text-green-700 transition duration-300">
+                    <li className="hover:text-green-700 dark:text-gray-300 dark:hover:text-green-400 transition duration-300">
                         <a
                             target="_blank"
                             rel="noopener noreferrer"

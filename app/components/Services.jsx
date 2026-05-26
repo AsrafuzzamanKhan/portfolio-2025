@@ -6,17 +6,17 @@ const Services = () => {
     return (
         <section
             id="services"
-            className="w-full px-[10%] py-12 scroll-mt-20 bg-white"
+            className="w-full px-[10%] py-12 scroll-mt-20 bg-white dark:bg-gray-950"
         >
-            <h4 className="text-center mb-2 text-lg font-Ovo text-gray-700">
+            <h4 className="text-center mb-2 text-lg font-Ovo text-gray-700 dark:text-gray-300">
                 What I do
             </h4>
 
-            <h2 className="text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo">
+            <h2 className="text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo dark:text-white">
                 Services
             </h2>
 
-            <p className="text-center max-w-2xl mx-auto mb-12 mt-5 text-gray-600 leading-7">
+            <p className="text-center max-w-2xl mx-auto mb-12 mt-5 text-gray-600 dark:text-gray-400 leading-7">
                 I build responsive, high-performance, and user-focused web applications
                 using modern full-stack technologies.
             </p>
@@ -25,19 +25,19 @@ const Services = () => {
                 {serviceData.map(({ icon, title, description }, index) => (
                     <div
                         key={index}
-                        className="bg-white rounded-2xl border border-gray-200 p-4 h-full shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"
+                        className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 p-4 h-full shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"
                     >
                         <div className="flex items-start gap-4 mb-4">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-pink-50 shrink-0">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-pink-50 dark:bg-gray-800 shrink-0">
                                 <Image className="w-6" src={icon} alt={title} />
                             </div>
 
-                            <h3 className="text-xl font-semibold text-black leading-snug">
+                            <h3 className="text-xl font-semibold text-black dark:text-white leading-snug">
                                 {title}
                             </h3>
                         </div>
 
-                        <p className="text-gray-600 leading-7 text-sm md:text-base">
+                        <p className="text-gray-600 dark:text-gray-400 leading-7 text-sm md:text-base">
                             {description}
                         </p>
                     </div>

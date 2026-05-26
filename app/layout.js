@@ -1,5 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -11,8 +12,8 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Asrafuzaman khan",
-  description: "full stack devloper",
+  title: "Asrafuzzaman Khan | Full-Stack Developer",
+  description: "Full-stack developer with 3+ years of experience building scalable web applications.",
 };
 
 export default function RootLayout({ children }) {
@@ -20,9 +21,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth min-h-screen">
       <body
         suppressHydrationWarning={true}
-        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}
+        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden bg-white dark:bg-gray-950 dark:text-white transition-colors duration-300`}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
