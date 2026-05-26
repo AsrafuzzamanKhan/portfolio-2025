@@ -7,11 +7,13 @@ export function ThemeProvider({ children }) {
     const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
-        const stored = localStorage.getItem("theme");
-        if (stored === "dark") {
-            setIsDark(true);
-            document.documentElement.classList.add("dark");
-        }
+        try {
+            const stored = localStorage.getItem("theme");
+            if (stored === "dark") {
+                setIsDark(true);
+                document.documentElement.classList.add("dark");
+            }
+        } catch (e) {}
     }, []);
 
     const toggleTheme = () => {

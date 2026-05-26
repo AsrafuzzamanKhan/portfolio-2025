@@ -1,27 +1,17 @@
-"use client";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
-import { useTheme } from "./ThemeProvider";
 
 const Footer = () => {
-    const { isDark } = useTheme();
-
     return (
         <div className="dark:bg-gray-950">
             <div className="text-center py-10">
-                <Image
-                    src={isDark ? assets.logo_dark : assets.logo}
-                    alt="footer logo"
-                    className="w-36 mx-auto mb-2"
-                />
+                <Image src={assets.logo} alt="footer logo" className="w-36 mx-auto mb-2 block dark:hidden" />
+                <Image src={assets.logo_dark} alt="footer logo" className="w-36 mx-auto mb-2 hidden dark:block" />
 
                 <div className="flex items-center justify-center gap-2 mb-4 w-max mx-auto">
-                    <Image
-                        src={isDark ? assets.mail_icon_dark : assets.mail_icon}
-                        alt="mail icon"
-                        className="w-6"
-                    />
+                    <Image src={assets.mail_icon} alt="mail icon" className="w-6 block dark:hidden" />
+                    <Image src={assets.mail_icon_dark} alt="mail icon" className="w-6 hidden dark:block" />
                     <a
                         href="mailto:contact@asrafuzzamankhan.com"
                         className="hover:underline dark:text-gray-300"
