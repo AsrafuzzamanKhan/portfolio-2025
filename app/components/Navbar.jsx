@@ -6,7 +6,7 @@ import { useTheme } from "./ThemeProvider";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
-    const [activeMenu, setActiveMenu] = useState("top");
+    const [activeMenu, setActiveMenu] = useState("home");
     const sideMenuRef = useRef();
     const { toggleTheme } = useTheme();
 
@@ -29,10 +29,10 @@ const Navbar = () => {
     const navLinks = [
         { id: "home", label: "Home" },
         { id: "about", label: "About me" },
-        { id: "certificates", label: "Certificates" },
-        { id: "services", label: "Services" },
-        { id: "work", label: "My work" },
         { id: "experience", label: "Experience" },
+        { id: "work", label: "My work" },
+        { id: "services", label: "Services" },
+        { id: "certificates", label: "Certificates" },
     ];
 
     return (
@@ -48,7 +48,7 @@ const Navbar = () => {
                     }`}
             >
                 {/* Logo — CSS-based switch so it works regardless of JS hydration */}
-                <a href="#top" onClick={() => setActiveMenu("top")} className="shrink-0">
+                <a href="#home" onClick={() => setActiveMenu("home")} className="shrink-0">
                     <Image src={assets.logo} alt="logo" className="w-24 cursor-pointer block dark:hidden" />
                     <Image src={assets.logo_dark} alt="logo" className="w-24 cursor-pointer hidden dark:block" />
                 </a>

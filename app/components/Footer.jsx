@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div className="dark:bg-gray-950">
+        <footer className="dark:bg-gray-950">
             <div className="text-center py-10">
                 <Image src={assets.logo} alt="footer logo" className="w-36 mx-auto mb-2 block dark:hidden" />
                 <Image src={assets.logo_dark} alt="footer logo" className="w-36 mx-auto mb-2 hidden dark:block" />
@@ -13,10 +13,10 @@ const Footer = () => {
                     <Image src={assets.mail_icon} alt="mail icon" className="w-6 block dark:hidden" />
                     <Image src={assets.mail_icon_dark} alt="mail icon" className="w-6 hidden dark:block" />
                     <a
-                        href="mailto:contact@asrafuzzamankhan.com"
+                        href="mailto:asrafuzzamankhan89@gmail.com"
                         className="hover:underline dark:text-gray-300"
                     >
-                        contact@asrafuzzamankhan.com
+                        asrafuzzamankhan89@gmail.com
                     </a>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </footer>
     );
 };
 

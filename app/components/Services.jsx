@@ -12,7 +12,7 @@ const Services = () => {
                 What I do
             </h4>
 
-            <h2 className="text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo dark:text-white">
+            <h2 className="text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo dark:text-white">
                 Services
             </h2>
 

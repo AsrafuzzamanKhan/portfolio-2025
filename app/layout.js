@@ -14,6 +14,11 @@ const ovo = Ovo({
 export const metadata = {
   title: "Asrafuzzaman Khan | Full-Stack Developer",
   description: "Full-stack developer with 3+ years of experience building scalable web applications.",
+  openGraph: {
+    title: "Asrafuzzaman Khan | Full-Stack Developer",
+    description: "Full-stack developer based in Adelaide, skilled in React.js, Next.js, Node.js, and MongoDB.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -28,6 +33,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden bg-white dark:bg-gray-950 dark:text-white transition-colors duration-300`}
+        suppressHydrationWarning
       >
         <ThemeProvider>
           {children}

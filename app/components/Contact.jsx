@@ -37,11 +37,14 @@ const Contact = () => {
             <h4 className='text-center mb-2 text-lg font-Ovo dark:text-gray-300'>
                 Connect with me
             </h4>
-            <h2 className='text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo dark:text-white'>
+            <h2 className='text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo dark:text-white'>
                 Get in touch
             </h2>
             <p className='text-center max-w-2xl mx-auto mb-10 mt-5 text-gray-600 dark:text-gray-400'>
-                Open to opportunities, collaborations, and project inquiries — use the form below to reach out.
+                Open to opportunities, collaborations, and project inquiries. Use the form below or email me at{" "}
+                <a href="mailto:asrafuzzamankhan89@gmail.com" className="underline hover:text-black dark:hover:text-white">
+                    asrafuzzamankhan89@gmail.com
+                </a>.
             </p>
 
             <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
@@ -70,10 +73,11 @@ const Contact = () => {
                 ></textarea>
                 <button
                     type='submit'
-                    className='flex items-center justify-center gap-2 px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition duration-300 uppercase'
+                    className='flex items-center justify-center gap-2 px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition duration-300'
                 >
                     Send Message
-                    <Image className='w-5' alt='send message' src={assets.right_arrow_white} />
+                    <Image className='w-5 block dark:hidden' alt='' src={assets.right_arrow_white} />
+                    <Image className='w-5 hidden dark:block' alt='' src={assets.right_arrow} />
                 </button>
             </form>
 

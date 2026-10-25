@@ -12,7 +12,7 @@ const About = () => {
                 Introduction
             </h4>
 
-            <h2 className="text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo mb-5 dark:text-white">
+            <h2 className="text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo mb-5 dark:text-white">
                 About me
             </h2>
 
@@ -38,8 +38,8 @@ const About = () => {
                     </p>
 
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-8">
-                        Currently completing a Master of ICT at the University of the Sunshine
-                        Coast (Adelaide), graduating June 2026. Actively seeking graduate
+                        I hold a Master of ICT from the University of the Sunshine Coast
+                        (Adelaide) and have full working rights in Australia. Actively seeking
                         full-stack developer opportunities in Adelaide.
                     </p>
 
@@ -47,7 +47,7 @@ const About = () => {
                         {infoList.map(({ icon, iconDark, title, description, description2 }, index) => (
                             <li
                                 key={index}
-                                className="border border-gray-200 dark:border-gray-700 p-6 md:p-4 rounded-2xl cursor-pointer hover:bg-[#fcf4ff] dark:hover:bg-gray-800 hover:-translate-y-1 duration-300 hover:shadow-lg dark:bg-gray-900 overflow-hidden"
+                                className="border border-gray-200 dark:border-gray-700 p-6 md:p-4 rounded-2xl hover:bg-[#fcf4ff] dark:hover:bg-gray-800 hover:-translate-y-1 duration-300 hover:shadow-lg dark:bg-gray-900 overflow-hidden"
                             >
                                 <Image
                                     src={icon}
@@ -80,7 +80,7 @@ const About = () => {
                         {toolsData.map((tool, index) => (
                             <li
                                 key={index}
-                                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:-translate-y-1 duration-300 hover:bg-[#fcf4ff] dark:hover:bg-gray-800 hover:shadow-lg dark:bg-gray-900"
+                                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-gray-600 rounded-lg hover:-translate-y-1 duration-300 hover:bg-[#fcf4ff] dark:hover:bg-gray-800 hover:shadow-lg dark:bg-gray-900"
                             >
                                 <Image src={tool} alt="tool" className="w-5 sm:w-7" />
                             </li>

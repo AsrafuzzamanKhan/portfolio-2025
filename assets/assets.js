@@ -124,11 +124,32 @@ export const certificateData = [
 ];
 export const workData = [
   {
+    title: "Mum's Kitchen",
+    description: "Restaurant ordering, booking & POS-synced platform",
+    bgImage: "/mumskitchen.png",
+    link: "https://mumskitchentranmere.com.au",
+    tech: ["Next.js 15", "TypeScript", "MongoDB Atlas", "NextAuth", "Stripe", "Cloudinary"],
+  },
+  {
     title: "MediQube",
-    description: "Full-stack telehealth platform",
+    description: "Telehealth platform with video consultations",
     bgImage: "/mediqube.png",
     link: "https://mediqube-phi.vercel.app/",
-    tech: ["Next.js", "React", "Node.js", "MongoDB", "AES-256"],
+    tech: ["Next.js", "Node.js", "MongoDB", "ZegoCloud", "JWT", "AES-256"],
+  },
+  {
+    title: "Inkdrop Studio",
+    description: "Custom DTF t-shirt e-commerce platform",
+    bgImage: "/inkdrop.png",
+    link: "https://inkdrop-frontend.vercel.app/",
+    tech: ["Next.js", "Express.js", "MongoDB", "Passport.js", "JWT"],
+  },
+  {
+    title: "Solar Energy Platform",
+    description: "Solar marketplace with installments & referrals",
+    bgImage: "/solar.png",
+    link: "https://solar-frontend-six.vercel.app/",
+    tech: ["Next.js", "Express.js", "MongoDB", "SSLCommerz"],
   },
   {
     title: "iLearning Solutions",
@@ -136,34 +157,6 @@ export const workData = [
     bgImage: "/ilearning.png",
     link: "https://i-learning-solutions.vercel.app/",
     tech: ["Next.js", "React", "Node.js", "MongoDB"],
-  },
-  {
-    title: "Food Club",
-    description: "Online food ordering website",
-    bgImage: "/food.png",
-    link: "https://food-club-f9921.web.app/",
-    tech: ["React", "Node.js", "MongoDB", "Firebase"],
-  },
-  {
-    title: "Car Vault",
-    description: "Car selling website",
-    bgImage: "/car.png",
-    link: "https://car-vault.web.app/",
-    tech: ["React", "Node.js", "MongoDB", "Firebase"],
-  },
-  {
-    title: "InfoStark",
-    description: "Business website",
-    bgImage: "/infostark.png",
-    link: "https://infostark.vercel.app/",
-    tech: ["React", "Next.js", "Tailwind CSS"],
-  },
-  {
-    title: "Nike Store",
-    description: "E-commerce frontend",
-    bgImage: "/nike.png",
-    link: "https://nike-shoe-ecommerce.netlify.app/",
-    tech: ["React", "Tailwind CSS"],
   },
 ];
 

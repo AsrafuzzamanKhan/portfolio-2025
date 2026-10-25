@@ -20,7 +20,7 @@ const Hero = () => {
 
             <p className="max-w-2xl text-gray-700 dark:text-gray-300 text-base md:text-lg leading-8">
                 Full-stack developer with 3+ years of experience building scalable, secure
-                web applications.Skilled in React.js, Next.js, Node.js, and MongoDB.
+                web applications. Skilled in React.js, Next.js, Node.js, and MongoDB.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm md:text-base text-gray-700 dark:text-gray-300 mt-1">
@@ -31,26 +31,27 @@ const Hero = () => {
                     6+ projects completed
                 </span>
                 <span className="px-4 py-1.5 rounded-full border border-gray-300 dark:border-gray-600">
-                    Open to graduate roles in Adelaide
+                    Open to full-stack developer roles in Adelaide
+                </span>
+                <span className="px-4 py-1.5 rounded-full border border-gray-300 dark:border-gray-600">
+                    Full working rights in Australia
                 </span>
             </div>
 
             <div className="flex flex-wrap justify-center gap-4 mt-3">
                 <a
-                    href="#contact"
-                    className="px-6 py-3 text-sm md:text-lg md:px-10 rounded-full border border-white bg-black text-white flex items-center gap-2 hover:bg-gray-800 transition"
+                    href="mailto:asrafuzzamankhan89@gmail.com"
+                    className="px-6 py-3 text-sm md:text-lg md:px-10 rounded-full border border-black bg-black text-white dark:border-white flex items-center gap-2 hover:bg-gray-800 transition"
                 >
                     Contact me
-                    <Image src={assets.right_arrow_white} alt="contact" className="w-4" />
+                    <Image src={assets.right_arrow_white} alt="" className="w-4" />
                 </a>
 
                 <a
-                    href="/resume.pdf"
-                    download
+                    href="#work"
                     className="px-6 py-3 text-sm md:text-lg md:px-10 rounded-full border border-gray-500 dark:border-gray-400 dark:text-white flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
                 >
-                    Download resume
-                    <Image src={assets.download_icon} alt="download" className="w-4" />
+                    View my work
                 </a>
             </div>
         </div>

@@ -13,7 +13,7 @@ const Certificates = () => {
                     Credentials
                 </h4>
 
-                <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo dark:text-white">
+                <h2 className="text-4xl md:text-5xl lg:text-[56px] font-Ovo dark:text-white">
                     Certificates
                 </h2>
 

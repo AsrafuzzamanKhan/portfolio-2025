@@ -4,12 +4,12 @@ import React from 'react'
 
 const Experience = () => {
     return (
-        <section id='experience' className="w-full px-6 md:px-12 lg:px-[10%] py-16 md:py-20 scroll-mt-20 bg-white dark:bg-gray-950">
+        <section id='experience' className="w-full px-[10%] py-12 scroll-mt-20 bg-white dark:bg-gray-950">
 
             <h4 className="text-center mb-2 text-lg font-Ovo dark:text-gray-300">
                 Career
             </h4>
-            <h2 className="text-center text-5xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo mb-10 dark:text-white">
+            <h2 className="text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo mb-10 dark:text-white">
                 Experience
             </h2>
 
@@ -41,7 +41,7 @@ const Experience = () => {
                                     >
                                         <Image
                                             src={assets.right_arrow}
-                                            alt="arrow"
+                                            alt=""
                                             className="w-4 mt-1.5"
                                         />
                                         <span>{item}</span>

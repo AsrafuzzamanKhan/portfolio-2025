@@ -15,10 +15,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Certificate />
-      <Services />
-      <Work />
       <Experience />
+      <Work />
+      <Services />
+      <Certificate />
       <Contact />
       <Footer />
     </>
