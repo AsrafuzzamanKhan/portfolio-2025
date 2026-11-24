@@ -11,24 +11,58 @@ const ovo = Ovo({
   weight: ["400"],
 });
 
+const siteTitle = "Asrafuzzaman Khan | Full Stack Developer in Adelaide";
+const siteDescription =
+  "Adelaide-based full-stack developer with 3+ years of experience building web apps with TypeScript, React, Next.js and Node.js. View my work and get in touch.";
+
 export const metadata = {
-  title: "Asrafuzzaman Khan | Full-Stack Developer",
-  description: "Full-stack developer with 3+ years of experience building scalable web applications.",
+  title: siteTitle,
+  description: siteDescription,
   openGraph: {
-    title: "Asrafuzzaman Khan | Full-Stack Developer",
-    description: "Full-stack developer based in Adelaide, skilled in React.js, Next.js, Node.js, and MongoDB.",
+    title: siteTitle,
+    description: siteDescription,
     type: "website",
+    locale: "en_AU",
   },
+  twitter: {
+    card: "summary",
+    title: siteTitle,
+    description: siteDescription,
+  },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "MD. Asrafuzzaman Khan",
+  jobTitle: "Full Stack Developer",
+  email: "mailto:asrafuzzamankhan89@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Adelaide",
+    addressRegion: "SA",
+    addressCountry: "AU",
+  },
+  alumniOf: "University of the Sunshine Coast",
+  knowsAbout: ["TypeScript", "JavaScript", "React", "Next.js", "Node.js", "Express.js", "PostgreSQL", "MongoDB"],
+  sameAs: [
+    "https://github.com/AsrafuzzamanKhan",
+    "https://www.linkedin.com/in/asrafuzzaman-khan",
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth min-h-screen" suppressHydrationWarning>
+    <html lang="en-AU" className="scroll-smooth min-h-screen" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();`,
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </head>
       <body

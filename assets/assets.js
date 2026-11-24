@@ -86,27 +86,27 @@ export const assets = {
 };
 export const certificateData = [
   {
-    title: "Microsoft Certified: Azure Data Fundamentals",
+    title: "Microsoft Certified: Azure Data Fundamentals (DP-900)",
     issuer: "Microsoft",
-    date: "March 23, 2026",
+    date: "23 March 2026",
     description:
       "Learned core data concepts, relational and non-relational data, and Azure data services.",
     image: assets.azure_database,
     link: "/certificates/azure_database.pdf",
   },
   {
-    title: "Microsoft Certified: Azure AI Fundamentals",
+    title: "Microsoft Certified: Azure AI Fundamentals (AI-900)",
     issuer: "Microsoft",
-    date: "March 25, 2025",
+    date: "25 March 2025",
     description:
       "Gained knowledge of AI concepts, machine learning, and Azure AI services.",
     image: assets.azure_AI,
     link: "/certificates/azure_ai_fundamentals.pdf",
   },
   {
-    title: "Information Technology Specialist - Python",
+    title: "Information Technology Specialist: Python Programming",
     issuer: "Certiport / Pearson",
-    date: "February 4, 2025",
+    date: "4 February 2025",
     description:
       "Successfully completed Python certification covering programming fundamentals, problem solving, and real-world applications.",
     image: assets.python,
@@ -115,7 +115,7 @@ export const certificateData = [
   {
     title: "Complete Web Development",
     issuer: "Programming Hero",
-    date: "December 25, 2021",
+    date: "25 December 2021",
     description:
       "Completed a full web development course covering HTML, CSS, JavaScript, React, and project-based learning.",
     image: assets.full_stack_development,
@@ -128,21 +128,21 @@ export const workData = [
     description: "Restaurant ordering, booking & POS-synced platform",
     bgImage: "/mumskitchen.png",
     link: "https://mumskitchentranmere.com.au",
-    tech: ["Next.js 15", "TypeScript", "MongoDB Atlas", "NextAuth", "Stripe", "Cloudinary"],
+    tech: ["Next.js 15", "TypeScript", "MongoDB Atlas", "NextAuth", "Stripe", "Epos Now POS"],
   },
   {
     title: "MediQube",
-    description: "Telehealth platform with video consultations",
+    description: "Telehealth & GP appointment platform (Master's capstone)",
     bgImage: "/mediqube.png",
     link: "https://mediqube-phi.vercel.app/",
-    tech: ["Next.js", "Node.js", "MongoDB", "ZegoCloud", "JWT", "AES-256"],
+    tech: ["Next.js", "Node.js", "MongoDB", "ZegoCloud", "JWT", "AES-256", "bcrypt"],
   },
   {
     title: "Inkdrop Studio",
-    description: "Custom DTF t-shirt e-commerce platform",
+    description: "Custom DTF t-shirt e-commerce platform. Containerised with Docker and built in a GitHub Actions pipeline",
     bgImage: "/inkdrop.png",
     link: "https://inkdrop-frontend.vercel.app/",
-    tech: ["Next.js", "Express.js", "MongoDB", "Passport.js", "JWT"],
+    tech: ["Next.js", "Express.js", "MongoDB", "Passport.js", "JWT", "Docker", "GitHub Actions"],
   },
   {
     title: "Solar Energy Platform",
@@ -177,7 +177,7 @@ export const serviceData = [
   },
   {
     icon: assets.ui_icon,
-    title: "Website Optimization & SEO",
+    title: "Website Optimisation & SEO",
     description:
       "Improve speed, performance, SEO, and overall user experience for better visibility and results.",
     link: "",
@@ -196,63 +196,78 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Technical skills",
-    description: "JavaScript (ES6+), TypeScript, Python, React.js, Next.js",
-    description2: "Node.js, Express.js, MongoDB, AES-256, JWT, RBAC",
+    description: "TypeScript, JavaScript, React, Next.js, Tailwind CSS",
+    description2: "Node.js, Express.js, PostgreSQL, MongoDB, Docker, GitHub Actions",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "Master of Information and Communications Technology",
-    description2: "University of the Sunshine Coast, Adelaide, Australia",
+    description: "Master of ICT, University of the Sunshine Coast, Adelaide",
+    description2: "Bachelor of Computer Science and Engineering, IST, Dhaka",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built 6+ full-stack web applications including a telehealth platform",
-    description2: "Focused on security, performance, and real-world impact",
+    description: "Built 5 full-stack web applications, including a live restaurant ordering site",
+    description2: "Focused on security, payments, and real-world use",
   },
 ];
 
 export const toolsData = [
-  assets.vscode,
-  assets.firebase,
-  assets.mongodb,
-  assets.figma,
-  assets.git,
+  { icon: assets.vscode, name: "VS Code" },
+  { icon: assets.firebase, name: "Firebase" },
+  { icon: assets.mongodb, name: "MongoDB" },
+  { icon: assets.figma, name: "Figma" },
+  { icon: assets.git, name: "Git" },
 ];
 
 export const workExperience = [
   {
-    company: "iLearning Solutions — Practicum, Adelaide",
-    role: "Full Stack Developer",
+    company: "Mum's Kitchen, Tranmere SA",
+    link: "https://mumskitchentranmere.com.au",
+    linkLabel: "mumskitchentranmere.com.au",
+    role: "Freelance Full Stack Developer",
+    period: "July 2026 – Present",
+    responsibilities: [
+      "Planned, built and launched an online ordering and table-booking site, with 150+ orders since launch",
+      "Integrated Stripe payments and Epos Now POS, so orders and menus sync automatically",
+      "Built a role-based admin panel that 3 staff use to manage orders and bookings",
+    ],
+    tech: ["Next.js", "TypeScript", "MongoDB", "NextAuth", "Stripe", "Epos Now"],
+  },
+  {
+    company: "iLearning Solutions, Adelaide",
+    role: "Full Stack Developer (Practicum)",
     period: "Aug 2025 – Dec 2025",
     responsibilities: [
-      "Built full-stack eLearning platform with Next.js & MongoDB; cut load time 35% via code-splitting",
-      "Delivered responsive component library, reducing post-launch UX issues by ~40%",
-      "Integrated 5+ REST APIs with optimised SEO metadata, improving search visibility",
-      "Shipped iteratively in Agile sprints — planning, peer review, and incremental releases",
+      "Built UI pages and REST API endpoints in a team, from requirements to deployment",
+      "Tested and deployed updates through a CI/CD pipeline on Vercel",
     ],
+    tech: ["Next.js", "React", "Node.js", "MongoDB", "Vercel"],
   },
   {
     company: "MHB-A Digital Web Design Agency",
     role: "Full Stack Developer",
     period: "Oct 2023 – Sep 2024",
     responsibilities: [
-      "Delivered 4+ client MERN stack applications on time and within scope",
-      "Built mobile-first UIs with React & Tailwind CSS; consistent cross-browser compatibility",
-      "Architected RESTful APIs and MongoDB schemas for client production systems",
+      "Built responsive React apps for 10+ clients, with Node.js/Express APIs and MongoDB models",
+      "Fixed faults and shipped improvements on live client sites, using Git and code reviews",
     ],
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Git"],
   },
   {
-    company: "Bookoceanbd.com",
+    company: "Book Ocean BD",
+    link: "https://bookoceanbd.com",
+    linkLabel: "bookoceanbd.com",
     role: "Web Developer",
     period: "Aug 2021 – Sep 2023",
     responsibilities: [
-      "Developed and maintained MERN stack apps serving an active e-commerce user base",
-      "Built responsive React interfaces, improving mobile engagement metrics",
-      "Independently owned backend services, DB queries, and deployment workflows",
+      "Maintained a live e-commerce site with 1,200 products and 500 customer accounts",
+      "Built stock sync and order tracking, and set up Google Analytics and Tag Manager",
+      "Promoted twice, starting as a Web Developer Intern",
     ],
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Google Analytics", "Tag Manager"],
   },
 ];

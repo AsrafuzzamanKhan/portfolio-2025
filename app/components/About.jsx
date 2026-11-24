@@ -8,9 +8,9 @@ const About = () => {
             id="about"
             className="w-full px-[10%] py-8 scroll-mt-20 bg-white dark:bg-gray-950"
         >
-            <h4 className="text-center mb-2 text-lg font-Ovo dark:text-gray-300">
+            <p className="text-center mb-2 text-lg font-Ovo dark:text-gray-300">
                 Introduction
-            </h4>
+            </p>
 
             <h2 className="text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo mb-5 dark:text-white">
                 About me
@@ -20,21 +20,21 @@ const About = () => {
                 <div className="w-60 sm:w-72 rounded-3xl overflow-hidden max-w-none">
                     <Image
                         src={assets.profile_img}
-                        alt="profile"
+                        alt="MD. Asrafuzzaman Khan"
                         className="rounded-3xl w-full"
                     />
                 </div>
 
                 <div className="flex-1">
                     <p className="mb-6 text-gray-700 dark:text-gray-300 leading-8">
-                        I am a Full-Stack Developer with 3+ years of experience building
-                        scalable, secure, and high-performance web applications. Skilled in
-                        React.js, Next.js, Node.js, and MongoDB, with a security-first mindset
-                        — implementing AES-256 encryption, JWT authentication, and role-based
-                        access control across production projects. My most recent work,
-                        MediQube, is a three-portal telehealth platform built for Australian
-                        primary care, featuring AI-assisted appointments and real-time video
-                        consultations.
+                        I&apos;m a full-stack developer with over 3 years of experience building
+                        and maintaining web applications with TypeScript, JavaScript, React,
+                        Next.js, and Node.js. I work directly with clients, turn their needs into
+                        working systems, and support them after launch. I&apos;ve built secure REST
+                        APIs and connected payment systems like Stripe, using encryption, JWT,
+                        and role-based access control. Most recently I built and launched the
+                        online ordering and booking site for Mum&apos;s Kitchen in Tranmere, which
+                        has taken 150+ online orders since launch.
                     </p>
 
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-8">
@@ -72,17 +72,17 @@ const About = () => {
                         ))}
                     </ul>
 
-                    <h4 className="my-6 text-gray-700 dark:text-gray-300 font-medium">
+                    <h3 className="my-6 text-gray-700 dark:text-gray-300 font-medium">
                         Tools & technologies
-                    </h4>
+                    </h3>
 
                     <ul className="flex items-center gap-3 sm:gap-4 flex-wrap">
-                        {toolsData.map((tool, index) => (
+                        {toolsData.map(({ icon, name }, index) => (
                             <li
                                 key={index}
                                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-gray-600 rounded-lg hover:-translate-y-1 duration-300 hover:bg-[#fcf4ff] dark:hover:bg-gray-800 hover:shadow-lg dark:bg-gray-900"
                             >
-                                <Image src={tool} alt="tool" className="w-5 sm:w-7" />
+                                <Image src={icon} alt={name} title={name} className="w-5 sm:w-7" />
                             </li>
                         ))}
                     </ul>

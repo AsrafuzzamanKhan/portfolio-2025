@@ -8,9 +8,9 @@ const Services = () => {
             id="services"
             className="w-full px-[10%] py-12 scroll-mt-20 bg-white dark:bg-gray-950"
         >
-            <h4 className="text-center mb-2 text-lg font-Ovo text-gray-700 dark:text-gray-300">
+            <p className="text-center mb-2 text-lg font-Ovo text-gray-700 dark:text-gray-300">
                 What I do
-            </h4>
+            </p>
 
             <h2 className="text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo dark:text-white">
                 Services

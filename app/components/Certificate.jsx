@@ -9,9 +9,9 @@ const Certificates = () => {
             className="w-full px-[10%] py-12 scroll-mt-20 bg-white dark:bg-gray-950"
         >
             <div className="text-center mb-14">
-                <h4 className="mb-2 text-lg font-Ovo text-gray-700 dark:text-gray-300">
+                <p className="mb-2 text-lg font-Ovo text-gray-700 dark:text-gray-300">
                     Credentials
-                </h4>
+                </p>
 
                 <h2 className="text-4xl md:text-5xl lg:text-[56px] font-Ovo dark:text-white">
                     Certificates

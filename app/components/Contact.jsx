@@ -34,17 +34,18 @@ const Contact = () => {
             id="contact"
             className="w-full px-[10%] py-10 scroll-mt-20 dark:bg-gray-950"
         >
-            <h4 className='text-center mb-2 text-lg font-Ovo dark:text-gray-300'>
+            <p className='text-center mb-2 text-lg font-Ovo dark:text-gray-300'>
                 Connect with me
-            </h4>
+            </p>
             <h2 className='text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo dark:text-white'>
                 Get in touch
             </h2>
             <p className='text-center max-w-2xl mx-auto mb-10 mt-5 text-gray-600 dark:text-gray-400'>
-                Open to opportunities, collaborations, and project inquiries. Use the form below or email me at{" "}
+                Looking for a full-stack developer in Adelaide? Send me an email and I&apos;ll reply within a day.
+                <br />
                 <a href="mailto:asrafuzzamankhan89@gmail.com" className="underline hover:text-black dark:hover:text-white">
                     asrafuzzamankhan89@gmail.com
-                </a>.
+                </a>
             </p>
 
             <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>

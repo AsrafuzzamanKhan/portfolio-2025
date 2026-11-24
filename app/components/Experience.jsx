@@ -6,23 +6,38 @@ const Experience = () => {
     return (
         <section id='experience' className="w-full px-[10%] py-12 scroll-mt-20 bg-white dark:bg-gray-950">
 
-            <h4 className="text-center mb-2 text-lg font-Ovo dark:text-gray-300">
+            <p className="text-center mb-2 text-lg font-Ovo dark:text-gray-300">
                 Career
-            </h4>
+            </p>
             <h2 className="text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo mb-10 dark:text-white">
                 Experience
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {workExperience.map(
-                    ({ company, role, period, responsibilities }, index) => (
+                    ({ company, link, linkLabel, role, period, responsibilities, tech }, index) => (
                         <div
                             key={index}
                             className="group rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 md:p-7 hover:border-gray-300 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
                         >
                             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                                 <div>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{company}</p>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                        {company}
+                                        {link && (
+                                            <>
+                                                {" · "}
+                                                <a
+                                                    href={link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="underline hover:text-black dark:hover:text-white"
+                                                >
+                                                    {linkLabel}
+                                                </a>
+                                            </>
+                                        )}
+                                    </p>
                                     <h3 className="text-2xl font-semibold text-gray-900 dark:text-white leading-snug">
                                         {role}
                                     </h3>
@@ -48,6 +63,12 @@ const Experience = () => {
                                     </li>
                                 ))}
                             </ul>
+
+                            {tech && (
+                                <p className="mt-5 text-sm text-gray-500 dark:text-gray-400">
+                                    {tech.join(" • ")}
+                                </p>
+                            )}
                         </div>
                     )
                 )}

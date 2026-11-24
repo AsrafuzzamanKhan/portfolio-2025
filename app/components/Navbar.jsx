@@ -38,7 +38,7 @@ const Navbar = () => {
     return (
         <>
             <div className="fixed top-0 right-0 -z-10 w-10/11 translate-y-[-80%] dark:hidden">
-                <Image src={assets.header_bg_color} alt="background" className="w-full" />
+                <Image src={assets.header_bg_color} alt="" className="w-full" />
             </div>
 
             <nav
@@ -105,8 +105,8 @@ const Navbar = () => {
                             }`}
                     >
                         Contact
-                        <Image src={assets.arrow_icon} alt="arrow" className="w-3 block dark:hidden" />
-                        <Image src={assets.arrow_icon_dark} alt="arrow" className="w-3 hidden dark:block" />
+                        <Image src={assets.arrow_icon} alt="" className="w-3 block dark:hidden" />
+                        <Image src={assets.arrow_icon_dark} alt="" className="w-3 hidden dark:block" />
                     </a>
 
                     {/* Mobile menu button */}

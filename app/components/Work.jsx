@@ -8,9 +8,9 @@ const Work = () => {
             id="work"
             className="w-full px-[10%] py-12 scroll-mt-20 bg-white dark:bg-gray-950"
         >
-            <h4 className="text-center mb-2 text-lg font-Ovo text-gray-700 dark:text-gray-300">
+            <p className="text-center mb-2 text-lg font-Ovo text-gray-700 dark:text-gray-300">
                 Portfolio
-            </h4>
+            </p>
 
             <h2 className="text-center text-4xl md:text-5xl lg:text-[56px] font-Ovo dark:text-white">
                 Selected Work
@@ -56,7 +56,7 @@ const Work = () => {
                                 <div className="flex items-center justify-center w-10 h-10 border dark:border-gray-600 rounded-full shadow-[2px_2px_0_#000] dark:shadow-[2px_2px_0_#fff] group-hover:bg-lime-300 transition duration-300 shrink-0">
                                     <Image
                                         src={assets.send_icon}
-                                        alt="Open project"
+                                        alt=""
                                         className="w-5"
                                     />
                                 </div>

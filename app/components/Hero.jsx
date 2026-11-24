@@ -10,17 +10,17 @@ const Hero = () => {
                 <Image src={assets.profile_img1} alt="MD. Asrafuzzaman Khan" className='rounded-full w-[150px] h-[150px] object-cover' />
             </div>
 
-            <h3 className='flex items-center gap-2 text-xl md:text-2xl font-Ovo mb-4'>
-                Hi, I&apos;m MD. Asrafuzzaman Khan <Image src={assets.hand_icon} alt='wave' className='w-6' />
-            </h3>
+            <p className='flex items-center gap-2 text-xl md:text-2xl font-Ovo mb-4'>
+                Hi, I&apos;m MD. Asrafuzzaman Khan <Image src={assets.hand_icon} alt='' aria-hidden='true' className='w-6' />
+            </p>
 
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-Ovo'>
-                Full-stack web developer
+                Full Stack Developer in Adelaide
             </h1>
 
             <p className="max-w-2xl text-gray-700 dark:text-gray-300 text-base md:text-lg leading-8">
-                Full-stack developer with 3+ years of experience building scalable, secure
-                web applications. Skilled in React.js, Next.js, Node.js, and MongoDB.
+                Full-stack developer with 3+ years of experience building and maintaining
+                web applications with TypeScript, React, Next.js, and Node.js.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm md:text-base text-gray-700 dark:text-gray-300 mt-1">
@@ -28,7 +28,7 @@ const Hero = () => {
                     3+ years experience
                 </span>
                 <span className="px-4 py-1.5 rounded-full border border-gray-300 dark:border-gray-600">
-                    6+ projects completed
+                    5 projects completed
                 </span>
                 <span className="px-4 py-1.5 rounded-full border border-gray-300 dark:border-gray-600">
                     Open to full-stack developer roles in Adelaide
